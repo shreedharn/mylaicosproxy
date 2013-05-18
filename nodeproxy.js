@@ -25,7 +25,7 @@ app.get('/', function(request, response) {
 
     var req = https.request(reqOptions, function(res) {
         var headers = res.headers;
-        headers['Access-Control-Allow-Origin'] = 'http://fogify.herokuapp.com';
+        headers['Access-Control-Allow-Origin'] = '*';
         headers['Access-Control-Allow-Headers'] = 'X-Requested-With';
         response.writeHead(200, headers);
 
